@@ -1,0 +1,78 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:700";
+
+table tr:nth-child(even) {
+  background:#F1F6FC
+}
+
+table tr:nth-child(odd) {
+  background:#FFF
+}
+
+table th {
+  background:#F1F6FC;
+  color:#3A5071;
+  font-weight:700;
+  letter-spacing:.66px
+}
+
+.react-bs-table {
+  -moz-box-shadow:-20px 20px 45px 0 rgba(0,0,0,0.3);
+  -webkit-box-shadow:-20px 20px 45px 0 rgba(0,0,0,0.3);
+  box-shadow:-20px 20px 45px 0 rgba(0,0,0,0.3)
+}
+
+tr {
+  height:56px
+}
+
+.table > tbody > tr > td {
+  vertical-align:middle
+}
+
+td:nth-child(even) {
+  color:#577198;
+  font-family:'Open Sans',sans-serif;
+  letter-spacing:.75px
+}
+
+td:nth-child(odd) {
+  color:#577198;
+  font-family:'Open Sans',sans-serif;
+  font-weight:700;
+  letter-spacing:.66px
+}
+
+table {
+  font-size:16px;
+  table-layout:auto;
+  text-align:center
+}
+
+td:nth-child(5) {
+  text-transform:lowercase
+}
+
+.pagination {
+  text-align:center;
+  word-spacing:-1em
+}
+
+.pagination li {
+  display:-moz-inline-box;
+  display:inline-block;
+  vertical-align:top;
+  word-spacing:normal;
+  *display:inline;
+  *zoom:1
+}
+
+.react-bs-table table {
+  margin-bottom:0;
+  table-layout:fixed
+}
+
+@media only screen and (max-width: 830px) {
+  .react-bs-table-container {
+    overflow-x: scroll;
+  }
+}
