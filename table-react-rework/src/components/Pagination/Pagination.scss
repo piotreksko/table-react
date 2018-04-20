@@ -1,0 +1,17 @@
+.pagination {
+	li {
+		&:hover {
+			&:not(.disabled) {
+				cursor: pointer;
+			}
+		}
+		display: -moz-inline-box;
+		display: inline-block;
+		vertical-align: top;
+		word-spacing: normal;
+		*display: inline;
+		*zoom: 1;
+	}
+	text-align: center;
+	word-spacing: -1em;
+}
