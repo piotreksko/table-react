@@ -1,0 +1,106 @@
+$color1: #3A5071;
+$color2: #577198;
+$color3: #dae0e9;
+$mainFont: 'Open Sans',sans-serif;
+$backgroundColor1: #F1F6FC;
+$backgroundColor2: #FFF;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+table {
+	tr {
+		&:nth-child(even) {
+			background-color: $backgroundColor1;
+		}
+		&:nth-child(odd) {
+			background-color: $backgroundColor2;
+		}
+	}
+	th {
+		background: #F1F6FC;
+		color: $color1;
+		font-weight: 700;
+		letter-spacing: .66px;
+		text-align: center;
+		border-left: 1px solid $color3;
+		border-right: 1px solid $color3;
+		&:hover {
+			cursor: pointer;
+		}
+		&:first-child {
+			border-left: none;
+		}
+		&:last-child {
+			border-right: none;
+		}
+	}
+	td {
+		border-left: 1px solid $color3;
+		border-right: 1px solid $color3;
+		&:first-child {
+			border-left: none;
+		}
+		&:last-child {
+			border-right: none;
+		}
+	}
+	font-size: 16px;
+	table-layout: auto;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-collapse: collapse;
+	border-radius: .25em;
+	overflow: hidden;
+	-moz-box-shadow: 0px 20px 45px 0 rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 20px 45px 0 rgba(0,0,0,0.3);
+	box-shadow: 0px 20px 45px 0 rgba(0,0,0,0.3);
+}
+tr {
+	height: 56px;
+}
+td {
+	&:nth-child(even) {
+		color: $color2;
+		font-family: $mainFont;
+		letter-spacing: .75px;
+	}
+	&:nth-child(odd) {
+		color: $color2;
+		font-family: $mainFont;
+		font-weight: 700;
+		letter-spacing: .66px;
+	}
+	&:nth-child(5) {
+		text-transform: lowercase;
+	}
+}
+.upsidedown {
+  transform: rotate(180deg);
+}
+.caret {
+	color: #d8dde2;
+}
+#header0 {
+	width: 60px;
+}
+#header1 {
+	width: 140px;
+}
+#header2 {
+	width: 140px;
+}
+#header3 {
+	width: 190px;
+}
+#header4 {
+	width: 135px;
+}
+#header5 {
+	width: 135px;
+}
+@media only screen and (max-width: 830px) {
+	.container {
+		overflow-x: scroll;
+	}
+}
