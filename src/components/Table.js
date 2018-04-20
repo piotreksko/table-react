@@ -53,7 +53,7 @@ class Table extends React.Component {
     render() {
       return (
         <div>
-        <div className="table-container">
+        <div className="container">
         <BootstrapTable data={ data } options={ this.options } pagination={true}>
         <TableHeaderColumn dataField='id' width='60' dataAlign="center" isKey dataSort>iD</TableHeaderColumn>
         <TableHeaderColumn dataField='firstName' width='140' dataAlign="center" dataSort>First Name</TableHeaderColumn>
